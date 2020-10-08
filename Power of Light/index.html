@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Power of Light v0.2</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section>
+		<h2>Light</h2>
+	</section>
+	<div class="light"></div>
+	<script type="text/javascript">
+		var position = document.documentElement;/*HTML 文档返回对象为HTML元素。
+
+*/
+        console.log(position);
+		position.addEventListener('mousemove', e => {
+			position.style.setProperty('--x', e.clientX + 'px');
+			position.style.setProperty('--y', e.clientY + 'px');
+		})
+	</script>
+
+</body>
+</html>
