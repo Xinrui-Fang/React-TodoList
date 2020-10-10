@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function Animal() {
+			this.eat = function() {
+				console.log('eat');
+			}
+		}
+
+		function Dog() {
+			this.bark = function() {
+				console.log('wang');
+			}
+		}
+
+		Dog.prototype = new Animal();
+
+	    var hashiqi = new Dog();
+	    console.log(hashiqi.eat());
+	   
+
+	</script>
+
+</body>
+</html>
